@@ -21,7 +21,7 @@
     "README.md"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json && node scripts/chmod-bin.mjs",
@@ -39,12 +39,12 @@
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
-    "@phylax/sdk": "file:../phylax-sdk-js",
+    "@phylax/sdk": "^0.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "vitest": "^4.1.10"
   }
 }
