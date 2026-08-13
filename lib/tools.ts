@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import type { PhylaxSdk } from '@phylax/sdk'
+import type { PhylaxSdk } from '@phyi/sdk'
 import { failure, text, unwrap, verdictReport, type ToolOutput } from './format.js'
 
 export interface ToolDefinition {

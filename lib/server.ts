@@ -1,5 +1,5 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
-import { PhylaxSdk } from '@phylax/sdk'
+import { PhylaxSdk } from '@phyi/sdk'
 
 import type { PhylaxMcpConfig } from './env.js'
 import { createTools } from './tools.js'

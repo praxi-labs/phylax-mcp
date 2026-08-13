@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 
-import { PhylaxSdk } from '@phylax/sdk'
+import { PhylaxSdk } from '@phyi/sdk'
 
 import { createTools } from '../../lib/tools.js'
 

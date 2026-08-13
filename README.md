@@ -24,7 +24,7 @@ Requires a Phylax API token. Create one at [app.phyi.dev](https://app.phyi.dev/m
   "mcpServers": {
     "phylax": {
       "command": "npx",
-      "args": ["-y", "@phylax/mcp"],
+      "args": ["-y", "@phyi/mcp"],
       "env": {
         "PHYLAX_API_TOKEN": "${PHYLAX_API_TOKEN}"
       }
@@ -51,7 +51,7 @@ Same shape, in `~/.cursor/mcp.json` for every workspace, or `.cursor/mcp.json` t
     "phylax": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@phylax/mcp"],
+      "args": ["-y", "@phyi/mcp"],
       "env": {
         "PHYLAX_API_TOKEN": "${env:PHYLAX_API_TOKEN}"
       }
@@ -89,7 +89,7 @@ For a team sharing one server rather than spawning one per user:
 ```sh
 PHYLAX_API_TOKEN=... \
 PHYLAX_MCP_AUTH_TOKEN=... \
-npx @phylax/mcp --http --port 8765
+npx @phyi/mcp --http --port 8765
 ```
 
 The server refuses to start on HTTP without `PHYLAX_MCP_AUTH_TOKEN`. An unauthenticated MCP endpoint grants tool execution to anyone who can reach the port.
@@ -112,7 +112,7 @@ Set `PHYLAX_MCP_AUDIENCE` to reject tokens minted for a different service, even 
 **The assistant never calls a tool.** The client did not start the server. Run the command yourself to see the error the client swallowed:
 
 ```sh
-PHYLAX_API_TOKEN=... npx @phylax/mcp
+PHYLAX_API_TOKEN=... npx @phyi/mcp
 ```
 
 **Every tool reports `unauthenticated`.** The token is missing, malformed or revoked. Ask the assistant to run `phylax_status`.

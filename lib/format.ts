@@ -1,4 +1,4 @@
-import type { PhylaxResult } from '@phylax/sdk'
+import type { PhylaxResult } from '@phyi/sdk'
 
 export interface ToolOutput {
   [key: string]: unknown

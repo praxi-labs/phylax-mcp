@@ -1,5 +1,5 @@
 {
-  "name": "@phylax/mcp",
+  "name": "@phyi/mcp",
   "version": "0.1.0",
   "description": "Model Context Protocol server for Phylax. Lets an assistant verify artifacts before it uses them.",
   "license": "MIT",
@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
-    "@phylax/sdk": "file:../phylax-sdk-js",
+    "@phyi/sdk": "file:../phylax-sdk-js",
     "zod": "^3.23.8"
   },
   "devDependencies": {
