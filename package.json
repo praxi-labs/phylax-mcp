@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
-    "@phyi/sdk": "file:../phylax-sdk-js",
+    "@phyi/sdk": "^0.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
