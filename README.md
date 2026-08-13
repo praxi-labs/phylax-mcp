@@ -1,5 +1,7 @@
 # Phylax MCP Server
 
+[![npm](https://img.shields.io/npm/v/@phyi/mcp?label=npm&color=CB3837)](https://www.npmjs.com/package/@phyi/mcp)
+
 A Model Context Protocol server for [Phylax](https://phyi.dev). Lets AI assistants verify packages, repositories and other MCP servers before using them.
 
 Phylax MCP exposes the Phylax verification API through the Model Context Protocol, so any MCP aware assistant such as Claude, VS Code Copilot, Cursor or Windsurf can check a package, audit a dependency list, or refuse a risky tool as part of a conversation. It runs locally over stdio, or as a shared HTTP server for a team.
@@ -138,3 +140,17 @@ npm run build
 ## License
 
 MIT
+
+## The rest of Phylax
+
+| Tool | Where to get it |
+| --- | --- |
+| JavaScript SDK | [`@phyi/sdk`](https://www.npmjs.com/package/@phyi/sdk) on npm |
+| Python SDK | [`phylax-sdk`](https://github.com/praxi-labs/phylax-sdk-python), PyPI release pending |
+| MCP server | [`@phyi/mcp`](https://www.npmjs.com/package/@phyi/mcp) on npm |
+| Agent runtime gate | [`@phyi/runtime-gate`](https://www.npmjs.com/package/@phyi/runtime-gate) on npm |
+| VS Code extension | [`phylax.phylax`](https://marketplace.visualstudio.com/items?itemName=phylax.phylax) on the Marketplace |
+| GitHub Action | [`praxi-labs/phylax-action`](https://github.com/praxi-labs/phylax-action) |
+| Browser extension | [`praxi-labs/phylax-chrome`](https://github.com/praxi-labs/phylax-chrome/releases/latest), Web Store listing pending |
+
+Docs live at [phyi.dev](https://phyi.dev).
