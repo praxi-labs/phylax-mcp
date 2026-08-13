@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "phylax-mcp": "./dist/index.js"
+    "phylax-mcp": "dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
