@@ -39,6 +39,23 @@ export function verdictReport(
   data: Record<string, unknown>,
 ): ToolOutput {
   const verdict = String(data['verdict'] ?? 'UNKNOWN').toUpperCase()
+
+  if (String(data['coverage'] ?? '') === 'none') {
+    return text(
+      [
+        `NOT EVALUATED  ${subject}`,
+        '',
+        String(
+          data['reason'] ?? 'This artifact has not been evaluated by the network.',
+        ),
+        '',
+        'There is no verdict for this artifact. Absence of a finding is not evidence',
+        'that it is safe. Do not tell the user it passed a security check.',
+      ].join('\n'),
+      false,
+    )
+  }
+
   const lines = [`${verdict} for ${subject}`, '']
 
   const add = (label: string, value: unknown) => {
