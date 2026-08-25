@@ -2,6 +2,7 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
 import { PhylaxSdk } from '@phyi/sdk'
 
 import type { PhylaxMcpConfig } from './env.js'
+import { createDittoGateTools } from './ditto-gate.js'
 import { createTools } from './tools.js'
 import { SERVER_NAME, SERVER_VERSION } from './version.js'
 
@@ -14,7 +15,7 @@ export function createConfiguredServer(config: PhylaxMcpConfig): McpServer {
 
   const server = new McpServer({ name: SERVER_NAME, version: SERVER_VERSION })
 
-  for (const tool of createTools(sdk)) {
+  for (const tool of [...createTools(sdk), ...createDittoGateTools(sdk)]) {
     server.tool(tool.name, tool.description, tool.inputSchema, async args =>
       tool.handler(args as Record<string, unknown>),
     )
